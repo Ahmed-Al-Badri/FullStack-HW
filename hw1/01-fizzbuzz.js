@@ -10,16 +10,18 @@ Use console.log() to write the proper output to the command line.
 **/
 
 const fizzbuzz = () => {
+  let b = "";
   for (let x = 1; x <= 100; x++) {
+    b = "";
     if (x % 3 == 0) {
-      process.stdout.write("fizz");
+      b += "fizz";
     }
     if (x % 5 == 0) {
-      process.stdout.write("buzz");
-    } else if (x % 3 != 0) {
-      process.stdout.write(`${x}`);
+      b += "buzz";
+    } else if (b == "") {
+      b = `${x}`;
     }
-    process.stdout.write("\n");
+    console.log(b);
   }
   // Add your code here
 };
