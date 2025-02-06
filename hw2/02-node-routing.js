@@ -1,7 +1,5 @@
 const http = require("http");
-const { url } = require("inspector");
 const port = process.env.PORT || 5001;
-const NodeCache = require("node-cache");
 
 // http://localhost:5001/welcome should return a status code 200 with a welcome message of your choice in html format
 
@@ -12,7 +10,6 @@ const NodeCache = require("node-cache");
 // http://localhost:5001/cookie should return 'cookies… yummm' in plain text and set 'hello=world' as a cookie
 
 // For other routes, such as http://localhost:5001/other, this exercise should return a status code 404 with '404 - page not found' in html format
-const cache = new NodeCache();
 const server = http.createServer((req, res) => {
   const routes = [
     "welcome",
