@@ -1,6 +1,3 @@
-/** Exercise 01 - Coins **/
-
-// Add your function here
 const calculateChange = (amount) => {
   let hold = `$${amount} ==> `;
   if (amount > 100) {
@@ -44,5 +41,6 @@ console.log(calculateChange(0.16));
 // $0.16 ==> 1 dime, 1 nickel, 1 penny
 console.log(calculateChange(150.11));
 // $150.11 ==> Error: the number is too large
-
+console.log(calculateChange(22.11));
+console.log(calculateChange(1.01));
 // Add additional test cases here

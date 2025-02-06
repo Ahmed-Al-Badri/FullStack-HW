@@ -52,7 +52,7 @@ app.get("/cookie", (req, res) => {
   res.set({ "content-type": "text/html", cookie: "hello=world" });
   res.send("<div>cookie... yummm</div>");
 });
-app.get("/other", (req, res) => {
+app.get("*", (req, res) => {
   res.status(404);
   res.set({ "content-type": "text/html" });
   res.send("<div>404... page not found</div>");
