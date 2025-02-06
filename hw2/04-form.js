@@ -12,7 +12,11 @@ app.get("/form", (req, res) => {
   <label for="User">User Name :</label><br>
   <input type="text" id="User" name="User"><br>
   <label for="Email">Email :</label><br>
-  <input type="text" id="User" name="Email" ><br><br>
+  <input type="text" id="User" name="Email" ><br>
+  <label for="Comments">Comments: </label> <br>
+  <textarea type="text" id="Comments" name="Comments"> </textarea> <br>
+  <label for="News">Sign up for news Letters </label>
+  <input type="radio" id="News" name="News" /><br><br>
   <input type="submit" value="Submit">
 </form> `);
   res.end();
@@ -20,9 +24,6 @@ app.get("/form", (req, res) => {
 });
 
 app.get("/submit", (req, res) => {
-  console.log("Submmited");
-  console.log(req.query);
-  //console.log(req);
   res.writeHead(200, { "content-type": "text/html" });
   res.write(
     `<div>
@@ -30,6 +31,20 @@ app.get("/submit", (req, res) => {
     </div>
     <div>
         <p>The Email is ${req.query.Email}</p>
+    </div>
+    <div>
+      <p>${
+        req.query.Comments == " "
+          ? "Their are no comments"
+          : "The comments are: " + req.query.Comments
+      }</p>
+    </div>
+    <div>
+        <p>${
+          req.query.News
+            ? "You signed up for news letters"
+            : "You did not sign up for news letters"
+        }</p>
     </div>`
   );
   res.end();
