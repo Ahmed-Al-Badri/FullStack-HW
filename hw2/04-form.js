@@ -24,9 +24,6 @@ app.get("/form", (req, res) => {
 });
 
 app.get("/submit", (req, res) => {
-  console.log("Submmited");
-  console.log(req.query);
-  //console.log(req);
   res.writeHead(200, { "content-type": "text/html" });
   res.write(
     `<div>
