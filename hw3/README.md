@@ -9,3 +9,5 @@ In order to run this Program, you need Nodejs and NPM.
 3. Run the React application. npm run dev.
 4. Open the url given.
 5. Log the Server data.
+6. [Video tutor](https://pdx.zoom.us/rec/share/INGYp9zkYhTuYMnqiyb10e05ZCSZzEUZAsLrsTFdyJhme8Z1Y7AyvWf7mZ40tBP3.U6fK1YNQjr6IRQjT?startTime=1740010379000). https://pdx.zoom.us/rec/share/INGYp9zkYhTuYMnqiyb10e05ZCSZzEUZAsLrsTFdyJhme8Z1Y7AyvWf7mZ40tBP3.U6fK1YNQjr6IRQjT?startTime=1740010379000
+7. 
