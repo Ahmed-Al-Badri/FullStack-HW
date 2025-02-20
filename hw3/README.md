@@ -1,8 +1,11 @@
-# React + Vite
+# React + Vite + TIC TAC TOK
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+In this Assigment, websockets were used to connect players, and their games, in which players connected on the Server can play together.
 
-Currently, two official plugins are available:
+In order to run this Program, you need Nodejs and NPM.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Start the Server node ./src/Server/server.js
+2. The address is localhost and the Port is 1000.
+3. Run the React application. npm run dev.
+4. Open the url given.
+5. Log the Server data.
