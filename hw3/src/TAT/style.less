@@ -1,0 +1,132 @@
+.TAT {
+  display: grid;
+  width: 100%;
+  position: relative;
+  grid-template-areas:
+    "server header login"
+    "TATs TATs TATs";
+}
+
+.Object {
+  min-height: 40px;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.server {
+  .Object;
+  grid-area: server;
+}
+
+.header {
+  .Object;
+  grid-area: header;
+}
+
+.login {
+  .Object;
+  grid-area: login;
+}
+
+.TATs {
+  grid-area: TATs;
+}
+
+.Connected {
+  background-color: #3ed3a9;
+}
+
+.Disconnected {
+  background-color: #fa5f1a;
+}
+
+.Hidden:focus > .Inner {
+  display: block;
+}
+
+.Button {
+  padding: 5px;
+  margin: 1px;
+  cursor: pointer;
+  display: inline-block;
+  border: 2px rgb(32, 24, 24) dotted;
+  border-radius: 10px;
+}
+
+.Hidden:not(:hover) .Inner:not(:active) {
+  display: none;
+}
+
+.Hidden:not(:hover) .Inner:not(:active) {
+  display: none;
+}
+
+.Inner:has(:active) {
+  display: block !important;
+}
+/*
+.Hidden :active {
+  display: block;
+}
+
+.Hidden :focus {
+  display: block;
+}
+
+.Inner {
+  //display: none;
+}
+
+.Inner:focus {
+  display: block;
+}
+
+.Inner :focus {
+  display: block;
+}
+
+.Inner :active {
+  display: block;
+}
+*/
+
+.Lobbys {
+  width: auto;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+.LobbyOptions {
+  display: grid;
+  grid-template-areas:
+    "CreateLobby SearchLobby"
+    "CreateShow CreateShow";
+  background-color: rgba(118, 118, 118, 0.289);
+}
+
+.LobbyInside {
+  grid-area: CreateShow;
+}
+
+.ShowLobbys {
+  display: flex;
+}
+
+.ShowLobbys > div {
+  flex: 50%;
+  border-radius: 5px;
+  border: black solid 2px;
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.ShowLobbys > div:active {
+  border-style: dashed;
+}
+
+.ShowLobbys:nth-last-child(odd) {
+  flex: 100%;
+}
